@@ -2,97 +2,74 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>John Doe – Resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Resume</title>
+
+  <!-- Font Awesome CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-2yQnq6F4WfheMWOhD2zrKszmOAwdbPxy8/mObvFxMsvYPJYZc0i8Z9V9+uWcY5CW3DfOy1FdC+Aw6OtnuM47yQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
   <link rel="stylesheet" href="resume.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
+  <div class="main-container">
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="sidebar-top">
-        <h2>👨‍💻 John Doe</h2>
-        <p>📧 <a href="mailto:john@example.com">john@example.com</a></p>
-        <p>📱 <a href="tel:+11234567890">(123) 456-7890</a></p>
-        <p>🌐 <a href="https://johndoe.com" target="_blank">johndoe.com</a></p>
+        <h2><i class="fas fa-user"></i> John Doe</h2>
+        <p><i class="fas fa-envelope"></i> john@example.com</p>
+        <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+        <p><i class="fas fa-globe"></i> johndoe.com</p>
       </div>
       <div class="sidebar-bottom">
-        <p>💼 <a href="https://linkedin.com/in/johndoe" target="_blank">LinkedIn</a></p>
-        <p>💻 <a href="https://github.com/johndoe" target="_blank">GitHub</a></p>
-        <p>📍 San Francisco, CA</p>
+        <p><i class="fab fa-linkedin"></i> LinkedIn</p>
+        <p><i class="fab fa-github"></i> GitHub</p>
+        <p><i class="fas fa-map-marker-alt"></i> San Francisco, CA</p>
       </div>
     </aside>
 
     <!-- Education -->
-    <section class="timeline-section">
-      <h2>🎓 Education</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p class="date">2020 – 2022</p>
-            <h3>M.Sc. Computer Science</h3>
-            <p>Stanford University</p>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p class="date">2016 – 2020</p>
-            <h3>B.Sc. Information Technology</h3>
-            <p>UC Berkeley</p>
-          </div>
-        </div>
+    <section class="education timeline-section">
+      <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+      <div class="timeline-item">
+        <h3>B.A. in Design – University A</h3>
+        <p>2017 – 2021</p>
       </div>
     </section>
 
     <!-- Work Experience -->
-    <section class="timeline-section">
-      <h2>💼 Work Experience</h2>
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p class="date">2023 – Present</p>
-            <h3>Senior UX Designer</h3>
-            <p>Fiserv, San Francisco</p>
-            <ul>
-              <li>Led redesign of banking app used by 2M+ users</li>
-              <li>Improved UX resulting in 25% higher engagement</li>
-            </ul>
-          </div>
-        </div>
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-content">
-            <p class="date">2020 – 2023</p>
-            <h3>Web Designer</h3>
-            <p>Creative Studio</p>
-            <ul>
-              <li>Designed 30+ responsive websites</li>
-              <li>Collaborated closely with development teams</li>
-            </ul>
-          </div>
-        </div>
+    <section class="work timeline-section">
+      <h2><i class="fas fa-briefcase"></i> Work Experience</h2>
+      <div class="timeline-item">
+        <h3>UX Designer – Tech Co.</h3>
+        <p>2021 – Present</p>
       </div>
     </section>
 
-    <!-- Certifications -->
-    <section class="info-section">
-      <h2>📜 Certifications</h2>
-      <ul>
-        <li>Google UX Design Certificate</li>
-        <li>Scrum Master Certification</li>
-      </ul>
+    <!-- Software Skills -->
+    <section class="software-skills info-section">
+      <h2><i class="fas fa-laptop-code"></i> Software Skills</h2>
+      <div class="circular-skills">
+        <div class="circle" data-percent="90"><span>Figma</span></div>
+        <div class="circle" data-percent="85"><span>Adobe XD</span></div>
+        <div class="circle" data-percent="75"><span>Photoshop</span></div>
+        <div class="circle" data-percent="70"><span>Illustrator</span></div>
+        <div class="circle" data-percent="65"><span>Sketch</span></div>
+      </div>
     </section>
 
-    <!-- Languages & Interests -->
-    <section class="info-section">
-      <h2>🧠 Languages & Interests</h2>
-      <p>🗣️ English, Spanish</p>
-      <p>🏞️ Photography, Hiking, Chess</p>
+    <!-- Skills -->
+    <section class="skills info-section">
+      <h2><i class="fas fa-code"></i> Skills</h2>
+      <div class="skill"><span>HTML</span><div class="bar"><div class="fill" style="width: 90%;"></div></div></div>
+      <div class="skill"><span>CSS</span><div class="bar"><div class="fill" style="width: 85%;"></div></div></div>
+      <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill" style="width: 80%;"></div></div></div>
+      <div class="skill"><span>Figma</span><div class="bar"><div class="fill" style="width: 75%;"></div></div></div>
+      <div class="skill"><span>Photoshop</span><div class="bar"><div class="fill" style="width: 70%;"></div></div></div>
     </section>
   </div>
 </body>
