@@ -25,22 +25,18 @@
     padding: 20px;
   }
   .sidebar-top {
-    background-color: oklch(0.828 0.189 84.429);
+    background-color: #fdc700;
     padding: 20px;
-    color: #000;
-    height: auto;
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   }
   .sidebar-bottom {
     background-color: #0077cc;
     padding: 20px;
-    color: #ffb900;
-   font-weight: 600;
-    height: auto;
-  justify-items: center;
-    padding: 20px;
+    color: #fdc700;
+   font-weight: 900;
     clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
-
+    justify-content: center; /* Horizontal centering */
+    align-items: center;     /* Vertical centering */
   }
   
   .education {
@@ -93,48 +89,45 @@
    
   }
   
-/* General icon styling (optional) */
-.sidebar i {
+/* General icon styling (optional)    
+ i {
   margin-right: 8px;
-  font-size: 16px;
+ row-gap: 60px;
+ column-gap: 60px;
+  color: #1c398e;
+  font-size: 60px;
+  justify-items: center;
 }
 
-/* Individual icon customizations */
-.icon-rocket {
-  color: #e74c3c;
-  font-size: 24px;
+/* Individual icon customizations    */
+
+.fa-brands {
+  color: #fdc700;
+  font-size: 80px;
   animation: bounce 2s infinite;
+  justify-items: center;
+margin: auto;
 }
 
-.icon-user {
-  color: #0077cc;
+
+.fas{
+ 
+  color: #1c398e;
+  font-size: x-large;
+}
+.icon-box:hover {
+  background-color: #0077cc;
 }
 
-.icon-email {
-  color: #2c3e50;
+.icon-box:hover i {
+  color: #fff;
 }
 
-.icon-phone {
-  color: #27ae60;
-}
 
-.icon-website {
-  color: #f39c12;
-}
 
-.icon-linkedin {
-  color: #0e76a8;
-}
+ 
 
-.icon-github {
-  color: #333;
-}
 
-.icon-location {
-  color: #8e44ad;
-}
-
-  
   /* Skill Bars */
   .skills .skill {
     margin-bottom: 15px;
@@ -173,7 +166,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background: conic-gradient(#0077cc calc(var(--p) * 1%), #e0e0e0 0%);
+    background: conic-gradient(#fdc700 calc(var(--p) * 1%), #e0e0e0 0%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -201,6 +194,7 @@
   .circle:nth-child(3) { --p: 75; }
   .circle:nth-child(4) { --p: 70; }
   .circle:nth-child(5) { --p: 65; }
+  color: #fdc700;
   }
  
   
