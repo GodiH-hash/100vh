@@ -11,6 +11,8 @@
       "sidebar education work"
       "sidebar software-skills software-skills"
       "sidebar skills skills";
+
+    background-color: #1c398e;
   }
   
   /* Grid Areas */
@@ -19,40 +21,65 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #f3f3f3;
+    background-color: #1c398e;
     padding: 20px;
   }
   .sidebar-top {
-    background-color: #d9eaf7;
+    background-color: oklch(0.828 0.189 84.429);
     padding: 20px;
+    color: #000;
+    height: auto;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   }
   .sidebar-bottom {
-    background-color: #c8f7dc;
+    background-color: #0077cc;
     padding: 20px;
+    color: #ffb900;
+   font-weight: 600;
+    height: auto;
+  justify-items: center;
+    padding: 20px;
+    clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
+
   }
   
   .education {
     grid-area: education;
+    background-color: oklch(0.424 0.199 265.638);
+    height: auto;
+    padding: 40px;
   }
   .work {
     grid-area: work;
+    background-color: oklch(0.424 0.199 265.638);
+    height: auto;
+    padding: 40px;
   }
   .software-skills {
     grid-area: software-skills;
+    background-color: oklch(0.424 0.199 265.638);
+    height: auto;
+    padding: 40px;
+    
   }
   .skills {
     grid-area: skills;
+    background-color: oklch(0.424 0.199 265.638);
+    height: auto;
+    padding: 40px;
   }
   
   /* Timeline Style */
   .timeline-section {
-    border-left: 3px solid #0077cc;
+    border-left: 3px solid oklch(0.828 0.189 84.429);
     padding-left: 20px;
     position: relative;
   }
   .timeline-item {
-    margin-bottom: 20px;
+    margin: 20px;
     position: relative;
+   
+   
   }
   .timeline-item::before {
     content: '';
@@ -61,15 +88,52 @@
     top: 5px;
     width: 10px;
     height: 10px;
-    background-color: #0077cc;
+    background-color: oklch(0.828 0.189 84.429);
     border-radius: 50%;
+   
   }
   
-  /* Font Awesome Icons */
-  i {
-    margin-right: 8px;
-    color: #0077cc;
-  }
+/* General icon styling (optional) */
+.sidebar i {
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Individual icon customizations */
+.icon-rocket {
+  color: #e74c3c;
+  font-size: 24px;
+  animation: bounce 2s infinite;
+}
+
+.icon-user {
+  color: #0077cc;
+}
+
+.icon-email {
+  color: #2c3e50;
+}
+
+.icon-phone {
+  color: #27ae60;
+}
+
+.icon-website {
+  color: #f39c12;
+}
+
+.icon-linkedin {
+  color: #0e76a8;
+}
+
+.icon-github {
+  color: #333;
+}
+
+.icon-location {
+  color: #8e44ad;
+}
+
   
   /* Skill Bars */
   .skills .skill {
@@ -132,12 +196,13 @@
   
   /* Set Progress via CSS variable */
   .circle {
-    --p: 90;
-  }
-  .circle:nth-child(2) { --p: 85; }
+    --p: 90; 
+    .circle:nth-child(2) { --p: 85; }
   .circle:nth-child(3) { --p: 75; }
   .circle:nth-child(4) { --p: 70; }
   .circle:nth-child(5) { --p: 65; }
+  }
+ 
   
   /* Responsive Design */
   @media screen and (max-width: 900px) {
