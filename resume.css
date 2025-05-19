@@ -33,14 +33,15 @@
   bottom: 0;
   left: 50%;
   margin-left: -3px;
+  margin-top: 60px;
 }
 
 /* Container around content */
 .container {
-  padding: 10px 40px;
+ padding: 10px 40px; 
   position: relative;
   background-color: inherit;
-  width: 50%;
+  width: 10%;
 }
 
 /* The circles on the timeline */
@@ -67,7 +68,7 @@
   left: 50%;
 }
 
-/* Add arrows to the left container (pointing right) */
+/* Add arrows to the left container (pointing right) 
 .left::before {
   content: " ";
   height: 0;
@@ -81,7 +82,7 @@
   border-color: transparent transparent transparent #fdc700;
 }
 
-/* Add arrows to the right container (pointing left) */
+/* Add arrows to the right container (pointing left) 
 .right::before {
   content: " ";
   height: 0;
@@ -100,10 +101,10 @@
   left: -16px;
 }
 
-/* The actual content */
+/* The actual content 
 .content {
-  padding: 20px 30px;
-  background-color: #1c398e;
+  padding: 20px;
+  background-color: red;
   position: relative;
   border-radius: 6px;
 }
@@ -148,6 +149,7 @@
     justify-content: space-between;
     background-color: #1c398e;
     padding: 20px;
+    width: 200px;
   }
   .sidebar-top {
     background-color: #fdc700;
@@ -158,14 +160,15 @@
   }
   .sidebar-bottom {
     background-color: oklch(0.424 0.199 265.638);
-  padding-top: 80%;
-  padding-left: 70px;
+ padding-top: 50%;
+  padding-left: 50px;
     color: #fdc700;
    font-weight: 900;
     clip-path: polygon(0 19%, 100% 0, 100% 100%, 0 100%);
     justify-content: center; /* Horizontal centering */
     align-items: center;     /* Vertical centering */
     height: 60%;
+    display: flexbox;
   }
   
   .education {
@@ -226,10 +229,9 @@
 
 .fa-brands {
   color: #fdc700;
-  font-size: 80px;
-  animation: bounce 2s infinite;
+  font-size: 60px;
+  
   justify-items: center;
-margin: auto;
 }
 
 
